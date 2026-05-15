@@ -2,11 +2,11 @@
   "version": 2,
   "functions": {
     "api/index.php": {
-      "runtime": "vercel-php@0.9.0",
+      "runtime": "vercel-php@0.5.2",
       "config": {
         "maxDuration": 10,
         "ini": {
-          "error_reporting": "E_ALL & ~E_DEPRECATED & ~E_NOTICE",
+          "error_reporting": "0",
           "display_errors": "Off"
         }
       }
