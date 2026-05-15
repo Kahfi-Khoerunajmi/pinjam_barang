@@ -2,14 +2,7 @@
   "version": 2,
   "functions": {
     "api/index.php": {
-      "runtime": "vercel-php@0.5.2",
-      "config": {
-        "maxDuration": 10,
-        "ini": {
-          "error_reporting": "0",
-          "display_errors": "Off"
-        }
-      }
+      "runtime": "vercel-php@0.5.2"
     }
   },
   "routes": [
