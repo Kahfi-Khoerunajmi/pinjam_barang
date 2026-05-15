@@ -7,7 +7,7 @@
   },
   "env": {
     "APP_ENV": "production",
-    "APP_DEBUG": "true",
+    "APP_DEBUG": "false",
     "APP_KEY": "base64:ttb6sCHuY9IV8pio4UaSP6NMODGvkeebyGkMXR1GZyg=",
     "LOG_CHANNEL": "stderr",
     "VIEW_COMPILED_PATH": "/tmp",
@@ -24,8 +24,12 @@
       "dest": "/public/build/$1"
     },
     {
-      "src": "/(css|js|images|favicon.ico)/(.*)",
-      "dest": "/public/$1/$2"
+      "src": "/assets/(.*)",
+      "dest": "/public/assets/$1"
+    },
+    {
+      "src": "/favicon.ico",
+      "dest": "/public/favicon.ico"
     },
     {
       "src": "/(.*)",
